@@ -1,0 +1,71 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 1.5 * $space;
+}
+
+.logo {
+  position: absolute;
+  top: $space;
+  left: $space;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  margin: 0 0.5 * $space;
+  justify-content: flex-start;
+
+  &__nav {
+    position: relative;
+    top: 3 * $space;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__li {
+    border-top: 1px solid $white;
+    padding: 0.5 * $space;
+    width: 100px;
+
+    &:nth-child(1) {
+      border-top: 0;
+    }
+  }
+
+  &__a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  @media (min-width: $bpoint_tab) {
+    justify-content: center;
+    text-align: center;
+
+    &__nav {
+      flex-direction: row;
+      justify-content: center;
+      top: $space;
+      margin: 0 $space;
+    }
+
+    li {
+      border: 0;
+      border-left: 1px solid $white;
+
+      &:nth-child(1) {
+        border: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+$white: #ffffff;
+$black: #000000;
+$green: #62c017;
+
+$base_unit: 16px;
+
+$line_height: 1.5 * $base_unit;
+
+$font_size_body: $base_unit;
+$font_size_body2: 0.75 * $base_unit;
+$font_size_h1: 3 * $base_unit;
+$font_size_h2: 2 * $base_unit;
+$font_size_h3: 1.25 * $base_unit;
+
+$space: 2 * $base_unit;
+
+$fontMada: "Mada", sans-serif;
+$fontHomenaje: "Homenaje", sans-serif;
+$font_light: 300;
+$font_normal: 400;
+$font_bold: 700;
+
+$container-max-width: 74 * $base_unit;
+
+$bpoint_mobile: 320px;
+$bpoint_tab: 768px;
+$bpoint_desk: 1200px;

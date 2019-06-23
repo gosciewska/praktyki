@@ -1,0 +1,88 @@
+html {
+  font-family: $fontMada;
+  font-size: $base_unit;
+  color: $black;
+  line-height: $line_height;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  font-family: $fontHomenaje;
+  font-size: $font_size_h1;
+  margin-bottom: $base_unit;
+  text-align: center;
+  margin: $space;
+}
+
+h2,
+.h2 {
+  font-size: $font_size_h2;
+}
+
+.small {
+  font-size: $font_size_body2;
+  line-height: $line_height;
+}
+
+button,
+.btn {
+  padding: 0.5 * $base_unit;
+  color: $white;
+  background-color: $green;
+  display: block;
+  font-size: inherit;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  
+  &:hover {
+    color: $black;
+  }
+}
+
+.aside-nav {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  text-align: center;
+  z-index: 100;
+  @media (min-width: $bpoint_tab) {
+    margin: 0 $space;
+  }
+
+  .aside__jump {
+    display: block;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.arrow-icon {
+  width: 25px;
+  height: 25px;
+
+  &--up {
+    transform: rotate(90deg);
+  }
+
+  &--down {
+    transform: rotate(270deg);
+  }
+}

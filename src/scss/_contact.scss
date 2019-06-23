@@ -1,0 +1,79 @@
+.contact {
+  clear: both;
+  position: relative;
+  margin: $space 0;
+}
+
+.content {
+  margin: 0 auto;
+  width: 80%;
+
+  &-checkbox {
+    margin: $space 0;
+  }
+
+  &-info {
+    margin: 0.5 * $space;
+    color: $green;
+    font-size: 1.25 * $base_unit;
+    text-align: center;
+  }
+
+  &-text {
+    margin: $space 0.25 * $space;
+
+    &__row {
+      font-size: 1.25 * $base_unit;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+
+    &__part {
+      position: relative;
+      flex-grow: 3;
+    }
+
+    &__label {
+      position: absolute;
+      bottom: 1%;
+      left: 10%;
+      margin: 0 0.5 * $space;
+    }
+  }
+}
+
+.content-text__form {
+  margin: $line_height auto;
+  max-width: 250px;
+  @media (min-width: $bpoint_tab) {
+    max-width: 368px;
+  }
+  @media (min-width: $bpoint_desk) {
+    max-width: 900px;
+  }
+
+  .content-text__input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $black;
+    color: $black;
+    font-size: $base_unit;
+    padding: 0 4px;
+  }
+
+  .content-text__input:focus {
+    border: 0;
+    border-bottom: 1px solid $green;
+  }
+  .content-text__input:focus + .content-text__label,
+  .content-text__input.is-filled + .content-text__label {
+    display: none;
+  }
+
+  .btn {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,62 @@
+.products {
+  position: relative;
+  text-align: center;
+
+  .icons-content {
+    margin: $space auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &-icon {
+      width: 75px;
+      height: 75px;
+      @media (min-width: $bpoint_tab) {
+        width: 125px;
+        height: 125px;
+      }
+
+      &__svg {
+        width: 75px;
+        height: 75px;
+        padding: 5px;
+        @media (min-width: $bpoint_tab) {
+          width: 125px;
+          height: 125px;
+          padding: 25px;
+        }
+      }
+
+      &__text {
+        display: none;
+        background-color: $green;
+        margin-top: -0.25 * $space;
+        padding: 0.25 * $space;
+        font-size: 0.5 * $base_unit;
+        line-height: 0.5 * $line_height;
+        color: $white;
+
+        @media (min-width: $bpoint_tab) {
+          font-size: 0.75 * $base_unit;
+          line-height: 0.75 * $line_height;
+        }
+      }
+    }
+
+    &-icon:hover {
+      cursor: pointer;
+      overflow: visible;
+      background-color: $green;
+      z-index: 100;
+
+      .icons-content-icon__text {
+        display: block;
+      }
+
+      .icons-content-icon__svg {
+        fill: $white;
+      }
+    }
+  }
+}

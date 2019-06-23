@@ -1,0 +1,94 @@
+.hero {
+  position: relative;
+  background-image: url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  padding: $space 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom right, $black, $green, yellow);
+    opacity: 0.85;
+  }
+
+  &-cookies {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: $white;
+    padding: $base_unit 2 * $base_unit;
+    font-size: 0.5 * $base_unit;
+
+    &__img {
+      background-image: url('../img/gingerbread2.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      transform: rotate(-25deg);
+      float: left;
+      width: 8%;
+      height: 25px;
+    }
+
+    &__info {
+      float: left;
+      width: 80%;
+      padding: 0 $space;
+      
+
+    }
+    
+    &__a {
+      color: $green;
+    }
+
+    &__btn {
+      float: left;
+      width: 10%;
+    }
+  }
+
+  &-h1 {
+    position: relative;
+    text-align: center;
+    font-family: $fontHomenaje;
+    top: 30vh;
+
+    &_white {
+      color: $white;
+      display: block;
+    }
+    &_black {
+      color: $black;
+    }
+  }
+}
+
+.middle-nav {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-100%);
+  bottom: $space;
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+
+  .aside__jump {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  margin: 0 $space;
+  text-align: center;
+}

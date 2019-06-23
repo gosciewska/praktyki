@@ -1,0 +1,15 @@
+.footer {
+  position: relative;
+  background-color: $black;
+  color: $white;
+  padding: 0.5 * $space 2 * $space;
+  font-weight: $font_light;
+
+  .arrow-icon--up {
+    background-color: $white;
+  }
+
+  .to-top {
+    position: relative;
+  }
+}

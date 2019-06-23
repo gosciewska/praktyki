@@ -1,0 +1,94 @@
+.swiper {
+  position: relative;
+  padding: $base_unit 0;
+  background-image: linear-gradient(
+    to right bottom,
+    #ffffbb,
+    #d1e79c,
+    #a0d082,
+    #69b96e,
+    #0da161
+  );
+
+  h2 {
+    color: $white;
+  }
+
+  &-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+    &__content {
+      display: flex;
+      font-weight: $font_light;
+      font-size: $base_unit;
+      padding: 0 2 * $space 0 0;
+      margin: 2 * $base_unit;
+      line-height: 1.25 * $line_height;
+
+      @media (min-width: $bpoint_tab) {
+        font-size: $font_size_h2;
+        line-height: 1.5 * $line_height;
+      }
+    }
+
+    &__char {
+      font-size: $font_size_h1;
+    }
+  }
+
+  &__img {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 125px;
+    height: 150px;
+    padding: 0 $space;
+
+    @media (min-width: $bpoint_tab) {
+      width: 188px;
+      height: 225px;
+    }
+
+    @media (min-width: $bpoint_desk) {
+      width: 250px;
+      height: 300px;
+    }
+
+    &--one {
+      background-image: url('../img/swiper1m.png');
+
+      @media (min-width: $bpoint_tab) {
+        background-image: url('../img/swiper1t.png');
+      }
+
+      @media (min-width: $bpoint_desk) {
+        background-image: url('../img/swiper1d.png');
+      }
+    }
+
+    &--two {
+      background-image: url('../img/swiper2m.png');
+
+      @media (min-width: $bpoint_tab) {
+        background-image: url('../img/swiper2t.png');
+      }
+
+      @media (min-width: $bpoint_desk) {
+        background-image: url('../img/swiper2d.png');
+      }
+    }
+    &--three {
+      background-image: url('../img/swiper3m.png');
+
+      @media (min-width: $bpoint_tab) {
+        background-image: url('../img/swiper3t.png');
+      }
+
+      @media (min-width: $bpoint_desk) {
+        background-image: url('../img/swiper3d.png');
+      }
+    }
+  }
+}
