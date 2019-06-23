@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Praktyki Infinity Group</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mada:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homenaje&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+</head>
+
+<body>
+    <main>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="folder" viewBox="0 -18 512 512"><title>folder</title><path d="m482.121094 264.636719 29.757812 26.726562-166.441406 185.316407-108.226562-103.019532 27.578124-28.972656 78.402344 74.628906zm29.878906-151.601563v63.242188l-40 43.417968v-106.660156c0-5.339844-2.078125-10.363281-5.855469-14.140625-3.777343-3.777343-8.800781-5.855469-14.140625-5.855469l-193.65625-.003906c-.046875 0-.09375 0-.140625 0-.070312 0-.136719-.003906-.207031-.003906v.003906c-4.828125 0-10.1875 2.980469-13.035156 7.25l-.15625.230469-31.285156 45.519531-153.515626.007813h-.003906c-5.347656 0-10.367187 2.082031-14.144531 5.855469-3.777344 3.78125-5.859375 8.800781-5.859375 14.144531v216.03125c0 11.027343 8.972656 20 20 20h149.042969l42.023437 40h-191.066406c-33.085938 0-60-26.917969-60-60v-322.074219c0-33.085938 26.914062-60 60-60h154.257812l30.710938 46.0625c2.914062 4.371094 7.878906 6.976562 13.289062 6.976562h.039063l193.703125.003907h.011719c16.019531 0 31.082031 6.238281 42.414062 17.566406 11.332031 11.332031 17.574219 26.398437 17.574219 42.425781zm-296.597656-39.859375c-1.316406-1.566406-2.566406-3.199219-3.714844-4.921875l-18.835938-28.253906h-132.851562c-11.027344 0-20 8.972656-20 20v49.449219c6.339844-2.234375 13.078125-3.40625 20-3.40625h.011719l132.464843-.007813 19.292969-28.070312c1.121094-1.667969 2.347657-3.261719 3.632813-4.789063zm0 0"/></symbol>
+    <symbol id="app" viewBox="0 0 512 512"><title>app</title><path d="m452 0h-392c-33.085938 0-60 26.914062-60 60v312c0 33.085938 26.914062 60 60 60h135v-40h-135c-11.027344 0-20-8.972656-20-20v-212h432v212c0 11.027344-8.972656 20-20 20h-136v40h136c33.085938 0 60-26.914062 60-60v-312c0-33.085938-26.914062-60-60-60zm-412 120v-60c0-11.027344 8.972656-20 20-20h392c11.027344 0 20 8.972656 20 20v60zm70-40c0 11.046875-8.953125 20-20 20s-20-8.953125-20-20 8.953125-20 20-20 20 8.953125 20 20zm70 0c0 11.046875-8.953125 20-20 20s-20-8.953125-20-20 8.953125-20 20-20 20 8.953125 20 20zm134 255.285156-39-39v155.714844c0 33.085938-26.914062 60-60 60h-115v-40h115c11.027344 0 20-8.972656 20-20v-155.714844l-39 39-28.285156-28.285156 87.285156-87.285156 87.285156 87.285156zm0 0"/></symbol>
+    <symbol id="search" viewBox="0 0 512 512"><title>search</title><path d="m302.058594 0c-115.761719 0-209.941406 94.179688-209.941406 209.941406 0 50.695313 18.0625 97.253906 48.089843 133.574219l-140.207031 140.207031 28.277344 28.277344 140.207031-140.210938c36.320313 30.03125 82.878906 48.09375 133.574219 48.09375 115.761718 0 209.941406-94.179687 209.941406-209.941406 0-115.761718-94.179688-209.941406-209.941406-209.941406zm0 379.894531c-93.710938 0-169.953125-76.242187-169.953125-169.953125 0-93.710937 76.242187-169.953125 169.953125-169.953125 93.710937 0 169.953125 76.242188 169.953125 169.953125 0 93.710938-76.242188 169.953125-169.953125 169.953125zm95.433594-237.109375-67.15625 67.15625 67.15625 67.15625-28.277344 28.277344-67.15625-67.15625-67.15625 67.15625-28.277344-28.277344 67.15625-67.15625-67.15625-67.15625 28.277344-28.277344 67.15625 67.15625 67.15625-67.15625zm0 0"/></symbol>
+    <symbol id="smartphone" viewBox="0 0 60 60"><title>smartphone</title><path d="M41.5,49c-2.206,0-4,1.794-4,4s1.794,4,4,4s4-1.794,4-4S43.706,49,41.5,49z M41.5,55c-1.103,0-2-0.897-2-2s0.897-2,2-2 s2,0.897,2,2S42.603,55,41.5,55z"/><path d="M37.5,5h4c0.552,0,1-0.447,1-1s-0.448-1-1-1h-4c-0.552,0-1,0.447-1,1S36.948,5,37.5,5z"/><path d="M44.5,5h1c0.552,0,1-0.447,1-1s-0.448-1-1-1h-1c-0.552,0-1,0.447-1,1S43.948,5,44.5,5z"/><path d="M54.095,0H28.905C26.476,0,24.5,1.977,24.5,4.405v9.534c-5.254,2.019-9,7.104-9,13.061c0,3.258,1.128,6.253,3.002,8.634 L1.816,51.271c-0.403,0.378-0.424,1.011-0.046,1.413C1.967,52.894,2.233,53,2.5,53c0.245,0,0.491-0.09,0.684-0.271l16.663-15.615 c1.33,1.27,2.907,2.276,4.653,2.947v15.534c0,2.429,1.976,4.405,4.405,4.405h25.189c2.429,0,4.405-1.977,4.405-4.405V4.405 C58.5,1.977,56.524,0,54.095,0z M28.905,2h25.189C55.421,2,56.5,3.079,56.5,4.405V6h-30V4.405C26.5,3.079,27.579,2,28.905,2z M17.5,27c0-5.339,3.507-9.87,8.336-11.423c0.158-0.051,0.318-0.09,0.477-0.134c0.185-0.051,0.37-0.102,0.558-0.144 c0.162-0.037,0.325-0.067,0.489-0.097c0.213-0.039,0.427-0.072,0.644-0.099c0.136-0.017,0.272-0.036,0.408-0.048 C28.771,15.022,29.133,15,29.5,15c6.617,0,12,5.383,12,12s-5.383,12-12,12c-0.367,0-0.729-0.022-1.088-0.055 c-0.136-0.013-0.272-0.031-0.408-0.048c-0.216-0.027-0.431-0.06-0.644-0.099c-0.163-0.03-0.326-0.061-0.489-0.097 c-0.188-0.042-0.373-0.093-0.558-0.144c-0.159-0.044-0.319-0.083-0.477-0.134C21.007,36.87,17.5,32.339,17.5,27z M27.8,40.886 c0.071,0.009,0.142,0.025,0.214,0.033C28.503,40.971,28.998,41,29.5,41c7.72,0,14-6.28,14-14s-6.28-14-14-14 c-0.502,0-0.997,0.029-1.486,0.081c-0.072,0.008-0.142,0.024-0.214,0.033c-0.422,0.051-0.84,0.117-1.25,0.205 c-0.017,0.004-0.033,0.005-0.05,0.008V8h30v38h-30v-5.327c0.017,0.003,0.033,0.004,0.05,0.008 C26.96,40.77,27.378,40.835,27.8,40.886z M54.095,58H28.905c-1.326,0-2.405-1.079-2.405-2.405V48h30v7.595 C56.5,56.921,55.421,58,54.095,58z"/></symbol>
+    <symbol id="settings" viewBox="0 0 54 54"><title>settings</title><path d="M51.22,21h-5.052c-0.812,0-1.481-0.447-1.792-1.197s-0.153-1.54,0.42-2.114l3.572-3.571 c0.525-0.525,0.814-1.224,0.814-1.966c0-0.743-0.289-1.441-0.814-1.967l-4.553-4.553c-1.05-1.05-2.881-1.052-3.933,0l-3.571,3.571 c-0.574,0.573-1.366,0.733-2.114,0.421C33.447,9.313,33,8.644,33,7.832V2.78C33,1.247,31.753,0,30.22,0H23.78 C22.247,0,21,1.247,21,2.78v5.052c0,0.812-0.447,1.481-1.197,1.792c-0.748,0.313-1.54,0.152-2.114-0.421l-3.571-3.571 c-1.052-1.052-2.883-1.05-3.933,0l-4.553,4.553c-0.525,0.525-0.814,1.224-0.814,1.967c0,0.742,0.289,1.44,0.814,1.966l3.572,3.571 c0.573,0.574,0.73,1.364,0.42,2.114S8.644,21,7.832,21H2.78C1.247,21,0,22.247,0,23.78v6.439C0,31.753,1.247,33,2.78,33h5.052 c0.812,0,1.481,0.447,1.792,1.197s0.153,1.54-0.42,2.114l-3.572,3.571c-0.525,0.525-0.814,1.224-0.814,1.966 c0,0.743,0.289,1.441,0.814,1.967l4.553,4.553c1.051,1.051,2.881,1.053,3.933,0l3.571-3.572c0.574-0.573,1.363-0.731,2.114-0.42 c0.75,0.311,1.197,0.98,1.197,1.792v5.052c0,1.533,1.247,2.78,2.78,2.78h6.439c1.533,0,2.78-1.247,2.78-2.78v-5.052 c0-0.812,0.447-1.481,1.197-1.792c0.751-0.312,1.54-0.153,2.114,0.42l3.571,3.572c1.052,1.052,2.883,1.05,3.933,0l4.553-4.553 c0.525-0.525,0.814-1.224,0.814-1.967c0-0.742-0.289-1.44-0.814-1.966l-3.572-3.571c-0.573-0.574-0.73-1.364-0.42-2.114 S45.356,33,46.168,33h5.052c1.533,0,2.78-1.247,2.78-2.78V23.78C54,22.247,52.753,21,51.22,21z M52,30.22 C52,30.65,51.65,31,51.22,31h-5.052c-1.624,0-3.019,0.932-3.64,2.432c-0.622,1.5-0.295,3.146,0.854,4.294l3.572,3.571 c0.305,0.305,0.305,0.8,0,1.104l-4.553,4.553c-0.304,0.304-0.799,0.306-1.104,0l-3.571-3.572c-1.149-1.149-2.794-1.474-4.294-0.854 c-1.5,0.621-2.432,2.016-2.432,3.64v5.052C31,51.65,30.65,52,30.22,52H23.78C23.35,52,23,51.65,23,51.22v-5.052 c0-1.624-0.932-3.019-2.432-3.64c-0.503-0.209-1.021-0.311-1.533-0.311c-1.014,0-1.997,0.4-2.761,1.164l-3.571,3.572 c-0.306,0.306-0.801,0.304-1.104,0l-4.553-4.553c-0.305-0.305-0.305-0.8,0-1.104l3.572-3.571c1.148-1.148,1.476-2.794,0.854-4.294 C10.851,31.932,9.456,31,7.832,31H2.78C2.35,31,2,30.65,2,30.22V23.78C2,23.35,2.35,23,2.78,23h5.052 c1.624,0,3.019-0.932,3.64-2.432c0.622-1.5,0.295-3.146-0.854-4.294l-3.572-3.571c-0.305-0.305-0.305-0.8,0-1.104l4.553-4.553 c0.304-0.305,0.799-0.305,1.104,0l3.571,3.571c1.147,1.147,2.792,1.476,4.294,0.854C22.068,10.851,23,9.456,23,7.832V2.78 C23,2.35,23.35,2,23.78,2h6.439C30.65,2,31,2.35,31,2.78v5.052c0,1.624,0.932,3.019,2.432,3.64 c1.502,0.622,3.146,0.294,4.294-0.854l3.571-3.571c0.306-0.305,0.801-0.305,1.104,0l4.553,4.553c0.305,0.305,0.305,0.8,0,1.104 l-3.572,3.571c-1.148,1.148-1.476,2.794-0.854,4.294c0.621,1.5,2.016,2.432,3.64,2.432h5.052C51.65,23,52,23.35,52,23.78V30.22z"/><path d="M27,18c-4.963,0-9,4.037-9,9s4.037,9,9,9s9-4.037,9-9S31.963,18,27,18z M27,34c-3.859,0-7-3.141-7-7s3.141-7,7-7 s7,3.141,7,7S30.859,34,27,34z"/></symbol>
+    <symbol id="network" viewBox="0 0 55 55"><title>network</title><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17 s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4 c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562 C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829 c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91 v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4 s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665 C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2 S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4 s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2 s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"/></symbol>
+    <symbol id="call" viewBox="0 0 512.076 512.076"><title>call</title><g transform="translate(-1 -1)"> <g> <g> <path d="M499.639,396.039l-103.646-69.12c-13.153-8.701-30.784-5.838-40.508,6.579l-30.191,38.818 c-3.88,5.116-10.933,6.6-16.546,3.482l-5.743-3.166c-19.038-10.377-42.726-23.296-90.453-71.04s-60.672-71.45-71.049-90.453 l-3.149-5.743c-3.161-5.612-1.705-12.695,3.413-16.606l38.792-30.182c12.412-9.725,15.279-27.351,6.588-40.508l-69.12-103.646 C109.12,1.056,91.25-2.966,77.461,5.323L34.12,31.358C20.502,39.364,10.511,52.33,6.242,67.539 c-15.607,56.866-3.866,155.008,140.706,299.597c115.004,114.995,200.619,145.92,259.465,145.92 c13.543,0.058,27.033-1.704,40.107-5.239c15.212-4.264,28.18-14.256,36.181-27.878l26.061-43.315 C517.063,422.832,513.043,404.951,499.639,396.039z M494.058,427.868l-26.001,43.341c-5.745,9.832-15.072,17.061-26.027,20.173 c-52.497,14.413-144.213,2.475-283.008-136.32S8.29,124.559,22.703,72.054c3.116-10.968,10.354-20.307,20.198-26.061 l43.341-26.001c5.983-3.6,13.739-1.855,17.604,3.959l37.547,56.371l31.514,47.266c3.774,5.707,2.534,13.356-2.85,17.579 l-38.801,30.182c-11.808,9.029-15.18,25.366-7.91,38.332l3.081,5.598c10.906,20.002,24.465,44.885,73.967,94.379 c49.502,49.493,74.377,63.053,94.37,73.958l5.606,3.089c12.965,7.269,29.303,3.898,38.332-7.91l30.182-38.801 c4.224-5.381,11.87-6.62,17.579-2.85l103.637,69.12C495.918,414.126,497.663,421.886,494.058,427.868z"/> <path d="M291.161,86.39c80.081,0.089,144.977,64.986,145.067,145.067c0,4.713,3.82,8.533,8.533,8.533s8.533-3.82,8.533-8.533 c-0.099-89.503-72.63-162.035-162.133-162.133c-4.713,0-8.533,3.82-8.533,8.533S286.448,86.39,291.161,86.39z"/> <path d="M291.161,137.59c51.816,0.061,93.806,42.051,93.867,93.867c0,4.713,3.821,8.533,8.533,8.533 c4.713,0,8.533-3.82,8.533-8.533c-0.071-61.238-49.696-110.863-110.933-110.933c-4.713,0-8.533,3.82-8.533,8.533 S286.448,137.59,291.161,137.59z"/> <path d="M291.161,188.79c23.552,0.028,42.638,19.114,42.667,42.667c0,4.713,3.821,8.533,8.533,8.533s8.533-3.82,8.533-8.533 c-0.038-32.974-26.759-59.696-59.733-59.733c-4.713,0-8.533,3.82-8.533,8.533S286.448,188.79,291.161,188.79z"/> </g> </g> </g></symbol>
+    <symbol id="download" viewBox="0 0 512 512"><title>download</title><path d="m409.785156 278.5-153.785156 153.785156-153.785156-153.785156 28.285156-28.285156 105.5 105.5v-355.714844h40v355.714844l105.5-105.5zm102.214844 193.5h-512v40h512zm0 0"/></symbol>
+    <symbol id="password" viewBox="0 0 512 512"><title>password</title><path d="m175 351h162c33.085938 0 60-26.914062 60-60v-107c0-33.085938-26.914062-60-60-60h-3.023438v-47.46875c0-42.199219-34.992187-76.53125-78-76.53125-43.011718 0-78 34.332031-78 76.53125v47.46875h-2.976562c-33.085938 0-60 26.914062-60 60v107c0 33.085938 26.914062 60 60 60zm42.976562-274.46875c0-20.144531 17.046876-36.53125 38-36.53125 20.953126 0 38 16.386719 38 36.53125v47.46875h-76zm-62.976562 107.46875c0-11.027344 8.972656-20 20-20h162c11.027344 0 20 8.972656 20 20v107c0 11.027344-8.972656 20-20 20h-162c-11.027344 0-20-8.972656-20-20zm357 177v101c0 27.570312-22.429688 50-50 50h-412c-27.570312 0-50-22.429688-50-50v-101c0-27.570312 22.429688-50 50-50h38v40h-38c-5.515625 0-10 4.484375-10 10v101c0 5.515625 4.484375 10 10 10h412c5.515625 0 10-4.484375 10-10v-101c0-5.515625-4.484375-10-10-10h-29v-40h29c27.570312 0 50 22.429688 50 50zm-296 31c11.046875 0 20 8.953125 20 20s-8.953125 20-20 20-20-8.953125-20-20 8.953125-20 20-20zm-80 0c11.046875 0 20 8.953125 20 20s-8.953125 20-20 20-20-8.953125-20-20 8.953125-20 20-20zm160 0c11.046875 0 20 8.953125 20 20s-8.953125 20-20 20-20-8.953125-20-20 8.953125-20 20-20zm80 0c11.046875 0 20 8.953125 20 20s-8.953125 20-20 20-20-8.953125-20-20 8.953125-20 20-20zm-140-155c0-11.046875 8.953125-20 20-20s20 8.953125 20 20-8.953125 20-20 20-20-8.953125-20-20zm0 0"/></symbol>
+</svg>
+        <header class='header' data-js="header">
+
+
+    <div class='menu' id='nav'>
+        <div class='logo'>
+            <a href='#' class='logo__img'>
+                <img src='/img/logo.png' alt='logo'>
+            </a>
+        </div>
+        <ul class='menu__nav'>
+            <li>
+                <a href='#mission'>MISSION</a>
+            </li>
+            <li>
+                <a href='#clients'>CLIENTS</a>
+            </li>
+            <li>
+                <a href='#products'>PRODUCTS</a>
+            </li>
+            <li>
+                <a href='#contact'>CONTACT</a>
+            </li>
+        </ul>
+    </div>
+
+</header>
+        <div class='hero' data-js='hero'>
+    <h1 class='hero-h1'>
+        <span class='hero-h1_white'>PRAKTYKI</span>
+        <span class='hero-h1_black'>INFINITY-GROUP</span>
+    </h1>
+    <div class='hero-cookies' id='hero-cookies' data-js='hero-cookies'>
+        <div class='hero-cookies_img'>
+        </div>
+        <div class='hero-cookies_info'>
+            We use own and third party cookies to improve our services and
+            show ads related to your preferences by analizing
+            your browser habits. If you continue browsing, we consider
+            you accapt its use. You can switch the configuration learn more
+            <a href="#">here</a>
+        </div>
+        <div class='hero-cookies_btn'>
+            <button data-cookies-btn>
+                CLOSE X
+            </button>
+        </div>
+
+    </div>
+    <aside class='middle-nav'>
+
+        <a class='aside__jump' href="#mission">
+            <span>Read more...</span>
+            <img class="arrow-icon arrow-icon--down" src='./img/arrow.svg' alt='go down' />
+
+        </a>
+    </aside>
+</div>
+        <div class='mission' data-js='mission'>
+    <section id='mission' class='content'>
+        <header class='content__header'>
+            <h2>Mission</h2>
+        </header>
+        <div class='content__text'>
+            <div class='content__text--first'>”</div>
+            <div class='content__text--second'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum...
+
+            </div>
+        </div>
+        <aside class='aside-nav'>
+            <a class='aside__jump' href='#nav'>
+                <img class='arrow-icon arrow-icon--up' src='./img/arrow.svg' alt='go up' />
+            </a>
+            1/5
+            <a class='aside__jump' href='#clients'>
+                <img class='arrow-icon arrow-icon--down' src='./img/arrow.svg' alt='go down' />
+            </a>
+        </aside>
+    </section>
+</div>
+        <div class='swiper' data-js='swiper'>
+    <section class='component swiper'>
+        <h2 id='clients'>Clients</h2>
+        <div class='swiper-container'>
+            <!-- Additional required wrapper -->
+            <div class='swiper-wrapper'>
+                <!-- Slides -->
+                <div class='swiper-slide'>
+                    <div class='swiper__img1 swiper_img'>
+
+                    </div>
+
+                    <div class='swiper-slide__content'>
+                        <span class='swiper-slide__char swiper-slide__text'>”</span>
+                        <span class='swiper-slide__text'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </span>
+                    </div>
+                </div>
+                <div class='swiper-slide'>
+                    <div class='swiper__img2 swiper_img'>
+
+                    </div>
+
+                    <div class='swiper-slide__content'>
+                        <span class='swiper-slide__char swiper-slide__text'>”</span>
+                        <span class='swiper-slide__text'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </span>
+                    </div>
+                </div>
+                <div class='swiper-slide'>
+                    <div class='swiper__img3 swiper_img'>
+
+                    </div>
+
+                    <div class='swiper-slide__content'>
+                        <span class='swiper-slide__char swiper-slide__text'>”</span>
+                        <span class='swiper-slide__text'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class='swiper-pagination'></div>
+
+        </div>
+        <aside class='aside-nav'>
+            <a class='aside__jump' href='#mission'>
+                <img class='arrow-icon arrow-icon--up' src='./img/arrow.svg' alt='go up' />
+            </a>
+            2/5
+            <a class='aside__jump' href='#products'>
+                <img class='arrow-icon arrow-icon--down' src='./img/arrow.svg' alt='go down' />
+            </a>
+        </aside>
+    </section>
+</div>
+        <div class='products' data-js="products">
+    <section id='products' class='icons'>
+        <h2>Products</h2>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+        <div class='icons-content'>
+            <div class="icons-content-icon">
+                <svg>
+                    <use xlink:href="#folder"></use>
+                </svg>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+            <div class="icons-content-icon">
+                <svg>
+                    <use xlink:href="#app"></use>
+                </svg>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+            <div class="icons-content-icon">
+                <svg>
+                    <use xlink:href="#search"></use>
+                </svg>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+            <div class="icons-content-icon">
+                <svg>
+                    <use xlink:href="#smartphone"></use>
+                </svg>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+            <div class="icons-content-icon">
+                <svg>
+                    <use xlink:href="#settings"></use>
+                </svg>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+            <div class="icons-content-icon">
+                <svg>
+                    <use xlink:href="#network"></use>
+                </svg>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+            <div class="icons-content-icon">
+                <svg>
+                    <use xlink:href="#call"></use>
+                </svg>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+            <div class="icons-content-icon">
+                <svg>
+                    <use xlink:href="#download"></use>
+                </svg>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+            <div class="icons-content-icon">
+                <svg>
+                    <use xlink:href="#password"></use>
+                </svg>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+            <div class="icons-content-icon">
+                <svg>
+                    <use xlink:href="#folder"></use>
+                </svg>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+            <div class="icons-content-icon">
+                <svg>
+                    <use xlink:href="#call"></use>
+                </svg>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+            <div class="icons-content-icon">
+                <svg>
+                    <use xlink:href="#smartphone"></use>
+                </svg>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            </div>
+        </div>
+        <aside class='aside-nav'>
+            <a class='aside__jump' href='#clients'>
+                <img class='arrow-icon arrow-icon--up' src='./img/arrow.svg' alt='go up' />
+            </a>
+            3/5
+            <a class='aside__jump' href='#map'>
+                <img class='arrow-icon arrow-icon--down' src='./img/arrow.svg' alt='go down' />
+            </a>
+        </aside>
+    </section>
+</div>
+        <div class='map' data-js='map'>
+        <section id='map' class='maps'>
+                <header class='map__header'>
+                        <h2> Map</h2>
+                </header>
+                <div class='map__content'>
+                        <div class='map__adress'>
+                                <span class='map__adress--bold'>Infinity Group sp.&nbsp;z&nbsp;o.o.</span><br />
+                                ul. Składowa 12<br />
+                                15-399 Białystok<br />
+                                Polska
+                        </div>
+                        <div class='map__google'>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2394.4048231409756!2d23.12060897252282!3d53.12087821185083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffb8cd96d9f03%3A0x4dd884d8e66a3265!2sSk%C5%82adowa+12%2C+15-727+Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1560722893482!5m2!1spl!2spl"
+                                        allowfullscreen></iframe>
+                        </div>
+                </div>
+                <aside class='aside-nav'>
+                        <a class='aside__jump' href='#products'>
+                                <img class='arrow-icon arrow-icon--up' src='./img/arrow.svg' alt='go up' />
+                        </a>
+                        4/5
+                        <a class='aside__jump' href='#contact'>
+                                <img class='arrow-icon arrow-icon--down' src='./img/arrow.svg' alt='go down' />
+                        </a>
+                </aside>
+        </section>
+</div>
+        <div class='contact' data-js='contact'>
+    <section id='contact' class='contact_i'>
+        <header class='contact__header'>
+            <h2>Contact</h2>
+        </header>
+        <div class='content'>
+            <div class='content-text'>
+                Sed ut perspiciatis unde omnis iste natus error
+                sit voluptatem accusantium doloremque laudantium,
+                <span>totam rem aperiam</span>, eaque ipsa quae ab illo
+                <span> inventore veritatis et </span> quasi
+                architecto beatae vitae.
+            </div>
+            <div class='content-text'>
+                <form>
+                    <div class='content-text__row'>
+                        <span>Hello! I'm</span>
+                        <div class='content-text__part'>
+                            <input class='content-text__input' id='name' type='text' />
+                            <label class='small content-text__label' for='name'>Your Name</label>
+                        </div>
+                        <span>and I represent</span>
+                        <div class='content-text__part'>
+                            <input class='content-text__input' id='company' type='text' />
+                            <label class='small content-text__label' for='company'>Company Name</label>
+                        </div>
+                        <span class='end'>.</span>
+                    </div>
+
+
+
+                    <div class='content-text__row'>
+                        <span>Call me at</span>
+                        <div class='content-text__part'>
+                            <input class='content-text__input' id='tel' type='tel' />
+                            <label class='small content-text__label' for='tel'>Your telephone number</label>
+                        </div>
+                        <span> or send an email to</span>
+                        <div class='content-text__part'>
+                            <input class='content-text__input' id='email' type='email' />
+                            <label class='small content-text__label' for='email'>Your email adress</label>
+                        </div>
+                        <span class='end'>.</span>
+                    </div>
+                    <div class='content-checkbox'>
+                        <input type='checkbox' id='accept' />
+                        <label for='accept'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </label>
+                    </div>
+                    <button type='submit' class='btn'>send details -></button>
+                </form>
+            </div>
+        </div>
+
+        <aside class='aside-nav'>
+            <a class='aside__jump' href='#map'>
+                <img class='arrow-icon arrow-icon--up' src='./img/arrow.svg' alt='go up' />
+            </a>
+            5/5
+        </aside>
+    </section>
+</div>
+        <footer class='footer' data-js="footer">
+        <div class='footer-content small'>
+                ©Copyrights 2019 EG <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        </div>
+
+        <aside class='aside-nav'>
+                To top
+                <a class='aside__jump' href='#nav'>
+                        <img class='arrow-icon arrow-icon--up' src='./img/arrow.svg' alt='go up' />
+                </a>
+        </aside>
+</footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+
+    </main>
+</body>
+
+</html>
