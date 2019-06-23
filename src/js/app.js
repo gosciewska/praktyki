@@ -1,20 +1,18 @@
 window.onload = function () {
 
+    var BODY = this.document.querySelector('body'),
+        btn_cookies = this.document.querySelector('[data-cookies-btn]');
     var isFilledClass = 'is-filled';
     var info = this.document.getElementById('content-info');
     var hero_cookies = this.document.getElementById('hero-cookies');
     var form = document.querySelector('[data-js=form]');
     const btnForm = document.querySelector('[data-js=form-btn]');
+
     var inputs = document.querySelectorAll('.content-text__input');
     inputs = [...inputs];
 
-    var BODY = this.document.querySelector('body'),
-        btn_cookies = this.document.querySelector('[data-cookies-btn]');
-
-
     if (document.cookie != "accept=true") {
         hero_cookies.style.display = "block";
-
     }
 
     btn_cookies.onclick = function () {
@@ -67,7 +65,7 @@ window.onload = function () {
                 for (let i = 0; i < inputs.length; i++) {
                     inputs[i].classList.remove(isFilledClass);
                 }
-                //send form
+                // here send form
             }
         }
         form.reset();
