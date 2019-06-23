@@ -80,7 +80,7 @@ h2,
 
 button,
 .btn {
-  padding: 8px 16px;
+  padding: 8px;
   color: #ffffff;
   background-color: #62c017;
   display: block;
@@ -154,7 +154,7 @@ button,
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
-    padding: 16px 128px;
+    padding: 16px 32px;
     font-size: 8px; }
     .hero-cookies_img {
       background-image: url(../img/gingerbread2.png);
@@ -168,11 +168,12 @@ button,
     .hero-cookies_info {
       float: left;
       width: 80%;
-      padding: 0 16px; }
+      padding: 0 32px; }
       .hero-cookies_info a {
         color: #62c017; }
     .hero-cookies_btn {
-      float: left; }
+      float: left;
+      width: 10%; }
   .hero-h1 {
     position: relative;
     text-align: center;
@@ -243,7 +244,6 @@ button,
   .menu__nav {
     position: relative;
     top: 96px;
-    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -264,7 +264,8 @@ button,
     .menu {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      text-align: center; }
       .menu__nav {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -283,19 +284,26 @@ button,
 
 .mission {
   position: relative;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 12px;
+  line-height: 18px;
   margin-bottom: 64px; }
 
 .content {
   width: 60%;
   margin: 0 auto; }
   .content__text--first {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: bold;
     position: absolute; }
+    @media (min-width: 768px) {
+      .content__text--first {
+        font-size: 48px; } }
   .content__text--second {
     margin: 0 0 0 32px; }
+    @media (min-width: 768px) {
+      .content__text--second {
+        font-size: 24px;
+        line-height: 36px; } }
 
 .swiper {
   position: relative;
@@ -464,9 +472,10 @@ button,
   margin: 32px 0; }
 
 .content {
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 80%; }
   .content-text {
-    margin: 32px; }
+    margin: 32px 8px; }
   .content-checkbox {
     margin: 32px 0; }
 
@@ -526,7 +535,7 @@ form {
   position: relative;
   background-color: #000000;
   color: #ffffff;
-  padding: 16px 128px;
+  padding: 16px 64px;
   font-weight: 300; }
   .footer .arrow-icon--up {
     background-color: #ffffff; }
